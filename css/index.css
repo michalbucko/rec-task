@@ -121,6 +121,59 @@ p
 
 
 
+
+
+.contact_box{
+  min-height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 5px;
+  transform: translate3d(0, 1000px, 0);
+  animation: var(--action) 300ms ease-in-out 0.1s forwards;
+  display: none;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 10;
+}
+
+.contact_form{
+  height: 500px;
+  margin-top: 300px;
+}
+
+.mess{
+  height: 200px;
+}
+
+.send{
+  float: left;
+}
+
+.exit{
+  float: right;
+}
+
+.question{
+  font-size: 25px;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes NO 
 {
   from, to {
@@ -150,6 +203,32 @@ p
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+}
+
+@keyframes arrive_form
+{
+    0% {
+        opacity: 0;
+        transform: translate3d(50px, 0, 0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes hide_form
+{
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
 }
 
 @keyframes move 
