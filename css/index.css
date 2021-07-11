@@ -39,11 +39,7 @@ p
   animation: arrive 300ms ease-in-out 0.7s forwards;
 }
 
-
-
-
-
-
+/*navbar css*/
 .navbar-nav li:hover>.dropdown-menu
 {
 	display: block;
@@ -61,11 +57,7 @@ p
 	background-color: rgb(64, 64, 128) !important;
 }
 
-
-
-
-
-
+/*content css*/
 .main
 {
   text-align: center;
@@ -110,19 +102,13 @@ p
     min-height: 25vh;
 }
 
- .spotify{
+.spotify
+{
   width: 30%;
   height: 30%;
 }
 
-
-
-
-
-
-
-
-
+/*form css*/
 .contact_box{
   min-height: 100%;
   width: 50%;
@@ -154,6 +140,10 @@ p
   float: left;
 }
 
+.reset{
+  float: right;
+}
+
 .exit{
   float: right;
 }
@@ -163,17 +153,18 @@ p
   padding: 10px;
 }
 
+.formcon small {
+	color: red;
+  float: left;
+  margin-left: 13px;
+  display: none;
+}
 
+.formcon.error small {
+	display: block;
+}
 
-
-
-
-
-
-
-
-
-
+/*animation css*/
 @keyframes NO 
 {
   from, to {

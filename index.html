@@ -29,23 +29,27 @@
 			<div class="contact_form">
 				<h2>Formularz kontaktowy</h2>
 				<form name="test" id="test">
-					<div class="name">
+					<div class="formcon">
 						<input type="text" class="form-control" id="name" placeholder="Podaj imię i nazwisko">
+						<small>Error</small>
 					</div>
-					<div class="email">
+					<div class="formcon">
 						<input type="email" class="form-control" id="email" placeholder="Podaj email">
+						<small>Error</small>
 					</div>
-					<div class="phone">
+					<div class="formcon">
 						<input type="phone" class="form-control" id="phone" placeholder="Podaj nr telefonu">
+						<small>Error</small>
 					</div>
-					<div class="mess">
+					<div class="formcon">
 						<input type="text" class="form-control mess" id="mess" placeholder="Twoja wiadomość">
+						<small>Error</small></br>
 					</div>
 					<div class="bot">
 						<div class="question" id="question">Question</div>
 						<div class="answers">
 							<dl>
-								<dt><input type="radio" class="answer" id="answer1" name="answer" value="answer1"> <label id="answerlabel1" for="answer">Answer 1</label></dt>
+								<dt><input type="radio" class="answer" id="answer1" name="answer" value="answer1" checked="checked"> <label id="answerlabel1" for="answer">Answer 1</label></dt>
 								<dt><input type="radio" class="answer" id="answer2" name="answer" value="answer2"> <label id="answerlabel2" for="answer">Answer 2</label></dt>
 								<dt><input type="radio" class="answer" id="answer3" name="answer" value="answer3"> <label id="answerlabel3" for="answer">Answer 3</label></dt>
 							</dl>
@@ -55,9 +59,11 @@
 						<button class="btn sub" type="submit" id="send" form="form" value="Submit">Wyślij</button>
 					</div>
 					<div class="exit">
-						<button class="btn hide" onclick=schowaj() type="submit" form="form" >X</button>	
+						<button class="btn exit" onclick=schowaj() type="submit" form="form" >X</button>	
 					</div>
-						
+					<div class="reset">
+						<button class="btn reset" type="reset" value="Reset" form="form" onclick=hide()>Reset</button>
+					</div>		
 				</form>
 			</div>
 		</div>
